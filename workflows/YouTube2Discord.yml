@@ -11,6 +11,8 @@ jobs:
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME }}
+          DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'The answer of name is: ${{ on.typeform.outputs.answers_map["name"] }}'
+          args: 'The answer of name is: `POCLANOS 포크라노스 - YouTube`\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}'
