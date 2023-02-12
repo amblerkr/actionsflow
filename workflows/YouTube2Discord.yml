@@ -15,6 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR }}
         uses: Ilshidur/action-discord@master
         with:
-          args: '`POCLANOS 포크라노스 - YouTube`
-**${{on.youtube.outputs.title}}**
-${{on.youtube.outputs.link}}'
+          args: "`POCLANOS 포크라노스 - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
